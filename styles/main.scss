@@ -3,10 +3,3 @@
 body {
     background-color: $gray-300;
 }
-
-.bg-img-3 {
-  background:
-    linear-gradient( $dark, rgba($dark, 0.1)),
-    url('../images/img-3.jpg') center center;
-  background-attachment: fixed;
-}

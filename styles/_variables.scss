@@ -10,56 +10,56 @@ $enable-print-styles:       true !default;
 
 // colors
 
-$white:    #fff;
-$gray-100: #f5f9fb;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
-$black:    #000;
+$white:         #ffffff;
+$gray-100:      #f5f9fb;
+$gray-200:      #e9ecef;
+$gray-300:      #dee2e6;
+$gray-400:      #ced4da;
+$gray-500:      #adb5bd;
+$gray-600:      #6c757d;
+$gray-700:      #495057;
+$gray-800:      #343a40;
+$gray-900:      #212529;
+$black:         #000000;
 
 $grays: ();
 $grays: map-merge((
-  "100": $gray-100,
-  "200": $gray-200,
-  "300": $gray-300,
-  "400": $gray-400,
-  "500": $gray-500,
-  "600": $gray-600,
-  "700": $gray-700,
-  "800": $gray-800,
-  "900": $gray-900
+  "100":        $gray-100,
+  "200":        $gray-200,
+  "300":        $gray-300,
+  "400":        $gray-400,
+  "500":        $gray-500,
+  "600":        $gray-600,
+  "700":        $gray-700,
+  "800":        $gray-800,
+  "900":        $gray-900
 ), $grays);
 
-$brand: #359BF4;
-$brand-cyan: #10BBAC;
-$brand-indigo: #6772E5;
-$brand-light: #F6F9FC;
-$brand-dark: #32325D;
+$brand:             #359BF4;
+$brand-cyan:        #10BBAC;
+$brand-indigo:      #6772E5;
+$brand-light:       #F6F9FC;
+$brand-dark:        #32325D;
 
 $brand-colors: ();
 $brand-colors: map-merge((
-  "brand":          $brand,
-  "brand-cyan":     $brand-cyan,
-  "brand-indigo":   $brand-indigo,
-  "brand-light":    $brand-light,
-  "brand-dark":     $brand-dark,
+  "brand":              $brand,
+  "brand-cyan":         $brand-cyan,
+  "brand-indigo":       $brand-indigo,
+  "brand-light":        $brand-light,
+  "brand-dark":         $brand-dark,
 ), $brand-colors);
 
-$blue:    #408AF8;
-$indigo:  $brand-indigo;
-$purple:  #b76ac4;
-$pink:    #E567A0;
-$red:     #E56767;
-$orange:  #F0A54F;
-$yellow:  #ffd600;
-$green:   #3ECF8E;
-$teal:    #1998d5;
-$cyan:    $brand-cyan;
+$blue:          #408AF8;
+$indigo:         $brand-indigo;
+$purple:        #b76ac4;
+$pink:          #E567A0;
+$red:           #E56767;
+$orange:        #F0A54F;
+$yellow:        #ffd600;
+$green:         #3ECF8E;
+$teal:          #1998d5;
+$cyan:           $brand-cyan;
 
 $primary:    $brand;
 $secondary:  $indigo;
@@ -71,27 +71,113 @@ $light:      $brand-light;
 $dark:       $brand-dark;
 $darker:     darken($dark, 5%);
 
+// background image
+
+$bg-images: (
+  'img-1',
+  'img-2',
+  'img-3',
+  'img-4',
+  'img-5',
+  'img-6',
+  'img-7',
+  'img-8',
+  'img-9',
+  'img-10',
+  'img-11',
+  'img-12',
+  'img-13',
+  'img-14',
+  'img-15',
+);
+
 // body
 
 $body-bg: $white;
 $body-color: $gray-700;
 
+// typography
+
+$font-weight-light:  100;
+$font-weight-normal: 300;
+$font-weight-bold:   700;
+
+$headings-font-weight: 700;
+$line-height-base: 1.5;
+
 // links
 
-$link-color:       $primary;
-$link-hover-color: darken($link-color, 15%);
+$link-color:        $primary;
+$link-hover-color:  darken($link-color, 15%);
 
 // borders
 
-$border-radius: 999px;
+// Components
+
+$line-height-lg:              1.5;
+$line-height-sm:              1.5;
+
+$border-width:                1px;
+$border-color:                $gray-300;
+
+$border-radius:               999px;
+$border-radius-lg:            .3rem;
+$border-radius-sm:            .2rem;
+// $component-active-color:      $white !default;
+// $component-active-bg:         theme-color("primary") !default;
 
 // buttons
+
 $btn-padding-y: .55rem;
 $btn-padding-x: 2rem;
 
-// typography
-$font-weight-light:  100 !default;
-$font-weight-normal: 300 !default;
-$font-weight-bold:   700 !default;
+$input-btn-padding-y:         .375rem;
+$input-btn-padding-x:         .75rem;
+$input-btn-line-height:       $line-height-base;
 
-$headings-font-weight: 700;
+$input-btn-focus-width:       .2rem;
+
+// $input-btn-focus-color:       $light;
+// $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color;
+
+$input-btn-padding-y-sm:      .25rem;
+$input-btn-padding-x-sm:      .5rem;
+$input-btn-line-height-sm:    $line-height-sm;
+
+$input-btn-padding-y-lg:      .5rem;
+$input-btn-padding-x-lg:      1rem;
+$input-btn-line-height-lg:    $line-height-lg;
+
+$input-btn-border-width:      $border-width;
+
+// forms
+
+$input-padding-y:             $input-btn-padding-y;
+$input-padding-x:             $input-btn-padding-x;
+$input-line-height:           $input-btn-line-height;
+
+// $input-padding-y-sm:          $input-btn-padding-y-sm;
+// $input-padding-x-sm:          $input-btn-padding-x-sm;
+// $input-line-height-sm:        $input-btn-line-height-sm;
+
+// $input-padding-y-lg:          $input-btn-padding-y-lg;
+// $input-padding-x-lg:          $input-btn-padding-x-lg;
+// $input-line-height-lg:        $input-btn-line-height-lg;
+
+$input-bg:                    $white;
+$input-disabled-bg:           $gray-200;
+
+$input-color:                 $gray-700;
+$input-border-color:          $gray-400;
+$input-border-width:          $input-btn-border-width;
+$input-box-shadow:            inset 0 1px 1px rgba($black, .075);
+
+$input-border-radius:         $border-radius;
+$input-border-radius-lg:      $border-radius-lg;
+$input-border-radius-sm:      $border-radius-sm;
+
+// $input-focus-bg:                        $input-bg !default;
+// $input-focus-border-color:              lighten($component-active-bg, 25%) !default;
+// $input-focus-color:                     $input-color !default;
+// $input-focus-width:                     $input-btn-focus-width !default;
+// $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
