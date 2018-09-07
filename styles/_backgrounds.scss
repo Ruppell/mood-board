@@ -3,3 +3,12 @@
         background-color: $value;
     }
 }
+
+@each $image in $bg-images {
+    .bg-#{$image} {
+        background:
+            linear-gradient( rgba($dark, 0.6), rgba($dark, 0.6)),
+            url('../images/#{$image}.jpg') center center;
+        background-size: cover;
+    }
+  }
