@@ -1,7 +1,47 @@
+// forms
+
+.input-group-text {
+    border-width: 0;
+    background: $light;
+}
+
+// form blended
+
 .form-blend {
-    color: white;
+    color: $light;
+
+    .form-control, .input-group-text {
+        border-color: rgba(black, 0.1);
+    }
+
+    .form-control {
+        background: $dark;
+        color: $light;
+
+        &::placeholder {
+            color: rgba(white, 0.5);
+            font-weight: $font-weight-light;
+        }
+    }
+
+    .form-control.is-valid {
+        border-color: $success;
+    }
+
+    .form-control.is-invalid {
+        border-color: $danger;
+    }
 }
 
 .form-blend-dark {
-    // color: rgba(white, 0.5);
+    @extend .form-blend;
+
+    label {
+        color: rgba(white, 0.5);
+    }
+
+    .form-control {
+        background: rgba(black, 0.1);
+        color: $light;
+    }
 }
