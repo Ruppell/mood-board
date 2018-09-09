@@ -1,5 +1,3 @@
-// import "jQuery";
-// import "bootstrap";
 import "bootstrap";
 
 // import styles
