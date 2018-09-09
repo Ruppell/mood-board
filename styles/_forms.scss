@@ -8,7 +8,7 @@
 
 .input-group-text {
     border-width: 0;
-    background: $light;
+    background: $gray-200;
 }
 
 // form blended
@@ -86,7 +86,6 @@
     .invalid-feedback {
         color: lighten($danger, 10%)
     }
-
 }
 
 .form-secondary {
